@@ -1,0 +1,405 @@
+#html {
+    background-color: #181A21;
+}
+.login {
+    color: #E9E9E9;
+    background-color: #181A21;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
+div {
+    display: block;
+}
+#header {
+    background: #171a21;
+    background-position: center top;
+    min-width: 940px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.header_panel {
+    background: #171a21;
+    position: relative;
+    width: 940px;
+    height: 104px;
+    margin: 0px auto;
+    z-index: 402;
+}
+.logo {
+    float: left;
+    padding-top: 30px;
+    margin-right: 40px;
+    width: 176px;
+    height: 44px;
+}
+.nav_container {
+    position: absolute;
+    left: 200px;
+}
+.nav_container_item {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-top: 45px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    line-height: 16px;
+    float: left;
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
+}
+#global_actions {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    height: 21px;
+    line-height: 21px;
+    color: #b8b6b4;
+    font-size: 11px;
+    z-index: 401;
+}
+#global_action_menu {
+    vertical-align: top;
+    line-height: 24px;
+    vertical-align: top;
+    display: inline-block;
+}
+.install_btn {
+    display: inline-block;
+    position: relative;
+    height: 21px;
+    line-height: 24px;
+    margin-right: 3px;
+    background-color:#567307;
+}
+.install_btn_content {
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 9px;
+    background-position: 10px 5px;
+    background-image: url(https://store.cloudflare.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #e5e4dc;
+    font-weight: normal;
+}
+.global_action_link {
+    text-decoration: none;
+    color: #e5e4dc;
+}
+.page_content {
+    padding: 0px 8px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(https://store.cloudflare.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg) center top no-repeat, #181A21;
+}
+.login_container {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_dialog {
+    position: relative;
+}
+.inner_login_dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Motiva Sans", Sans-serif;
+}
+.primary_header {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    font-weight: 200;
+}
+.new_login_dialog_container {
+    background-color: #181a21;
+    border-radius: 4px;
+    padding: 24px 32px;
+    flex: 1;
+    min-width: 636px;
+}
+.new_login_dialog {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.login_form {
+    flex: 1;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+}
+.new_login_dialog_TextField {
+    display: grid;
+    grid-template-areas:
+        "label hint"
+        "input input";
+    grid-template-columns: 1fr min-content;
+    gap: 2px;
+}
+.new_login_dialog_FieldLabel {
+    color: #1999ff;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    user-select: none;
+}
+.new_login_dialog_FieldLabel_Password {
+    color: #afafaf;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    user-select: none;
+}
+.new_login_dialog_InputText {
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+    background-color: #32353c;
+    outline: none;
+    font-size: 15px;
+    grid-area: input;
+    border: 1px solid #32353c;
+}
+.new_login_dialog_CheckboxField {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.new_login_dialog_Checkbox {
+    width: 14px;
+    height: 14px;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: #32353c;
+    cursor: pointer;
+}
+.new_login_dialog_Check {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.new_login_dialog_CheckboxFieldLabel {
+    color: #afafaf;
+    font-size: 12px;
+    user-select: none;
+    padding-left: 6px;
+}
+.SVGIcon_Button {
+    fill: #fff;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 320px;
+}
+.polyline {
+    fill: none;
+}
+.polyline :not(svg) {
+    transform-origin: 0px 0px;
+}
+.new_login_dialog_SignInButton_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignInButton {
+    position: relative;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+    letter-spacing: .03em;
+    cursor: pointer;
+    width: 270px;
+}
+.new_login_dialog_TextLink {
+    text-align: center;
+    color: #afafaf;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ErrorForm {
+    color: #c15755;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+.QR_section {
+    flex: 0;
+    display: grid;
+    gap: 4px;
+    margin-left: 24px;
+}
+.Beta_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+.Beta_tag {
+    color: #1999ff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+.Beta_subtitle_WithQR {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+}
+.PhoneIcon {
+    width: 120px;
+    fill: #afafaf;
+}
+.Beta_subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #afafaf;
+    margin: 8px;
+}
+.JoinBetaButton {
+    background-color: rgba(255,255,255,.1);
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.ShowQRLink {
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #afafaf;
+    padding: 12px 0px;
+    cursor: pointer;
+}
+.bottom_row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: #181A21;
+}
+.bottom_row_item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+.subtext {
+    font-size: 14px;
+    color: #b8b6b4;
+}
+.about_link {
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+}
+.bottom_row_item_image {
+    width: 320px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+.JoinToSteam_btn {
+    margin: 20px 0 10px 0;
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #fff !important;
+    background: transparent;    
+}
+.span {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+#footer_spacer {
+    background-color: #181A21;
+    height: 290px;
+}
+#footer {
+    background-color: #181A21;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px 0 60px 0;
+    margin: 0;
+    background: #171a21;
+}
+.footer_content {
+    width: 940px;
+    margin: 0px auto;
+    padding-top: 16px;
+}
+.line {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+#footer_logo_steam {
+    float: right;
+    padding-top: 2px;
+}
+#footer_logo_valve {
+    float: left;
+    padding-top: 2px;
+}
+.valvelink {
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer_text {
+    float: left;
+    margin-left: 12px;
+    color: #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+}

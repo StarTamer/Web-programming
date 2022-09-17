@@ -121,6 +121,8 @@
     border: 1px solid #bdbdbd;
     border-radius: 5rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    
 }
 .text-field {
     display: block;
