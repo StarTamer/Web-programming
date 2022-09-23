@@ -2,8 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg">
+        
         <title>Войти</title>
     </head>
     <body class="login">
@@ -33,6 +37,50 @@
                     </div>
                 </div>
             </div>
+
+            <div class="responsive_header">
+				<div class="responsive_header_content">
+                    <input type="checkbox" id="side-checkbox" />
+                    <div class="side-panel mainmenu"> 
+                        <label class="side-button-2" for="side-checkbox">+</label> 
+                        <div class="responsive_page_menu">
+                            <div class="mainmenu_contents">
+                                <div class="mainmenu_contents_items">
+                                    <a class="menuitem" href="https://store.steampowered.com/login/?redir=login%2F&amp;redir_ssl=1&amp;snr=1_60_4__global-header"> Войти </a>
+                                    <a class="menuitem supernav" href="" data-tooltip-type="selector" data-tooltip-content=".submenu_store">    Магазин	<div class="chevron"></div></a>
+                                    <a class="menuitem supernav" style="display: block" href="" data-tooltip-type="selector" data-tooltip-content=".submenu_community">    Сообщество		<div class="chevron"></div></a>
+                                    <a class="menuitem" href="https://help.steampowered.com/ru/">    Поддержка	</a>
+                                    <div class="minor_menu_items">
+                                        <div class="menuitem change_language_action">   Изменить язык	</div>
+                                        <div class="menuitem" onclick>   Полная версия	</div>
+                                    </div>
+                                </div>
+                                <div class="mainmenu_footer_spacer"></div>
+                                <div class="mainmenu_footer">
+                                    <div class="mainmenu_footer_logo"><img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"></div>
+                                    © Valve Corporation. Все права защищены. Все торговые марки являются собственностью соответствующих владельцев в США и других странах.
+                                    <span class="mainmenu_valve_links">
+                                        <a href="https://store.steampowered.com/privacy_agreement/?snr=1_60_4__global-responsive-menu" target="_blank">Политика конфиденциальности</a>
+                                        &nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Правовая информация</a>
+                                        &nbsp;| &nbsp;<a href="https://store.steampowered.com/subscriber_agreement/?snr=1_60_4__global-responsive-menu" target="_blank">Соглашение подписчика Steam</a>
+                                        &nbsp;| &nbsp;<a href="https://store.steampowered.com/steam_refunds/?snr=1_60_4__global-responsive-menu" target="_blank">Возвраты</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side-title">Выдвижная панель:</div>
+                        <p>Информация в панеле</p>
+                    </div>
+					<div class="side-button-1-wr">
+                        <label class="side-button-1" for="side-checkbox">
+						<img class="side-b side-open" src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%"></label>
+					</div>
+					<div class="responsive_header_logo">
+						<a href="https://store.steampowered.com/?snr=1_60_4__global-responsive-menu"><img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM"></a>
+					</div>
+				</div>
+			</div>
+
             <div class="page_content">
                 <div class="login_container">
                     <div class="login_dialog">
@@ -96,19 +144,50 @@
                     </div>
                 </div>
             </div>
-            <div id="footer_spacer"></div>
-            <div id="footer">
-                <div class="footer_content">
-                    <div class="line"></div>
-                    <div id="footer_logo_steam">
-                        <img src="https://store.cloudflare.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Steam">
-                    </div>
-                    <div id="footer_logo_valve">
-                        <a class="valvelink" href="http://www.valvesoftware.com"><img src="https://store.cloudflare.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve"></a>
-                    </div>
-                    <div id="footer_text">
-                        <div>© 2022 Valve Corporation. Все права защищены. Все торговые марки являются собственностью соответствующих владельцев в США и других странах.</div>
-                        <div>НДС включён во все цены, где он применим.&nbsp;&nbsp;</div>
+
+            <div class="responsive_page_content">
+                <div class="responsive_page_template_content">
+                    <div class="page_content"></div>
+                </div>
+            </div>
+
+            <div id="footer_spacer">
+                <div id="footer">
+                    <div class="footer_content">
+                        <div class="line"></div>
+                        <div id="footer_logo_steam">
+                            <img src="https://store.cloudflare.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Steam">
+                        </div>
+                        <div id="footer_logo_valve">
+                            <a class="valvelink" href="http://www.valvesoftware.com"><img height="25px" src="https://store.cloudflare.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve"></a>
+                        </div>
+                        <div id="footer_text">
+                            <div>© 2022 Valve Corporation. Все права защищены. Все торговые марки являются собственностью соответствующих владельцев в США и других странах.</div>
+                            <div>НДС включён во все цены, где он применим.&nbsp;&nbsp; 
+                                <a class="refs" href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_">Политика конфиденциальности</a>
+                                &nbsp; | &nbsp;
+                                <a class="refs" href="https://store.steampowered.com/legal/?snr=1_44_44_">Правовая информация</a>
+                                &nbsp; | &nbsp;
+                                <a class="refs" href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_">Соглашение подписчика Steam</a>
+                                &nbsp; | &nbsp;
+                                <a class="refs" href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_">Возвраты</a>
+                                &nbsp; | &nbsp;
+                                <a class="refs" href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_">Файлы cookie</a>
+                            </div>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <br>
+                        <div class="line"></div>
+                        <div class="valve_links">
+                            <a href="http://www.valvesoftware.com/about">О Valve</a>
+                            &nbsp; | &nbsp;<a href="http://www.valvesoftware.com">Вакансии</a>
+                            &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/">Steamworks</a>
+                            &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect">Дистрибуция Steam</a>
+                            &nbsp; | &nbsp;<a href="https://help.steampowered.com/ru/?snr=1_44_44_">Служба поддержки</a>
+                            &nbsp; | &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_">Подарочные карты</a>
+                            &nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+                            &nbsp; | &nbsp;<a href="http://twitter.com/steam"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+                        </div>
                     </div>
                 </div>
             </div>
