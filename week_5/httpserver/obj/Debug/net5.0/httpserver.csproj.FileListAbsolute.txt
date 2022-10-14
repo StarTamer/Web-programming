@@ -1,0 +1,16 @@
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\httpserver.exe
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\httpserver.deps.json
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\httpserver.runtimeconfig.json
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\httpserver.runtimeconfig.dev.json
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\httpserver.dll
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\ref\httpserver.dll
+C:\Users\EmKa\source\repos\httpserver\httpserver\bin\Debug\net5.0\httpserver.pdb
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.csproj.AssemblyReference.cache
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.AssemblyInfoInputs.cache
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.AssemblyInfo.cs
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.csproj.CoreCompileInputs.cache
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.dll
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\ref\httpserver.dll
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.pdb
+C:\Users\EmKa\source\repos\httpserver\httpserver\obj\Debug\net5.0\httpserver.genruntimeconfig.cache
