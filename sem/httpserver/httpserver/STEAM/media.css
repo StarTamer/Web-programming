@@ -1,0 +1,249 @@
+
+.responsive_header {
+    display: none;
+    background: #171a21;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 20;
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    overflow: hidden; 
+    padding: 13px 8px;
+    max-width: 100%;
+}
+.responsive_header_content {
+    display: block;
+}
+.responsive_header .responsive_header_logo a {
+    display: inline-block;
+}
+.responsive_header .responsive_header_logo img {
+    vertical-align: middle;
+}
+#side-checkbox {
+    display: none;
+}
+.side-panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: black;
+    z-index: 30;
+    width: 280px;
+    left: -360px;
+    transition: left 0.5s, right 0.5s; 
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    color: #FFF;
+    padding: 40px 20px;
+    text-align: left;
+}
+.responsive_page_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.mainmenu_contents {
+    background: #171a21;
+    font-size: 22px;
+    position: relative;
+    min-height: 100%;
+}
+.mainmenu_contents_items {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+}
+.mainmenu_contents .menuitem{
+    border-top: 1px solid #2f3138;
+    border-bottom: 1px solid #000000;
+}
+.mainmenu_contents .menuitem {
+    display: block;
+    padding: 0 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5em;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #bdbdbd;
+    background: #171a21;
+}
+.mainmenu_contents .menuitem .chevron {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAwCAYAAACG5f33AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFxJREFUeNrkmg9klGEcx5/dMY4Y44hjxIgxRpSy7NwspSmNWZayGGmKFJGylCJSmlJMKctiylKa5aZpSmmMMWIcY4xxjGPEmPX72ffN23Z7732f3/Pe+97tx9dtd/e87/N+7n1+/563Ym1tTbmx8fHxLnq5QzqYSqXmbO+rMrMoaZDUz5dX6MsRl/A66OU5KUFK0/9xVb42QOLr/UTaLwZIsI7hoFG8VUsapferyhDeI1In/o7xdZL2Og2ocFrCBKkFv0Rlvo9JR0grZQKvl3Qrz/tLpCRpxhNAgteEXyDmcNL3pHbSaonDu0B67PB5ln0/adYVQILHt+0X0g4XJ39G6ilheJ0IGoVsAXdixhEgwWugl68kLz7uHulaCcJj/z5s8++FbJ50ADA3AyR4dYCnE2Uvkp6UELwU/HvM47gMlvPifwAJXi3gJQSTOkV6UwLw9sBF6WYSvwFxKbJhjc8LJ/aSdDjk8HYjOErSMAaYy7eE+aDpQrlPAfsDZzsZQni8un4JV9kIqc1K3/IFkWos5XrBSRxzp4CM/foPFAK6NkZqtee+W6UxcUCsE5yMXcI+e8QK0KpwPQ2CY3wnHcIKc5VIJ3BSyS+WQdjPBggvBrfUKDjGJODlvJZyNfTyjVQjPHkzaTkAeFyCvkW+p2vTcEc5z7WwwfQmqLp50NYc0I22SacVVOGmHyhMsC0bQp5YrLr5Kem80P38S5hFAG0lHief1YJJFatu5sbvdcH4TSWbGKCtyZAWJqG3STd9hHeZ9ECYPfCdN+fmy54AAmIjIMYEk+zB3WjaulAN6dqWbStjAAFRtxD3s24+gYgbFcBr9pr8awEExKNoBVVqTngFWf2Yoc7KqGAuOcCb8jpQGyAgSn91E3Wzl+bvVnNgeD91BosAAiLnWQPCpZNEzuXV6gEvLoDH+emE7vVHDCwf9mPdwiI/rZGo78KyjQtcSJsEnimAbK/Uekda1xKA6BbGTk3odngnSZ+lF24KIBu3868Ixte5jOxWz1K3ycGV0Bm1vqOowgSQ7aEwSeaA8MEhmlqdFUmvshtlpQojQKvSuC8Y34JkOJqnszKsZN3yc3A3KswA2a6S+gTjObLbN7qjiPSS/RZ2L/2mL9QvgGyXSC8E47mT0mvrrHQIjnUD7sW4mcgDnT6OYjmeFpyC04wmwfi7AOiL+XkHWhHvLOmd4BgSeH1+wisGQAsiNw5GVHGtH25ElTpAe9Y/VqTzvUbEVeUC0IJ4XK1vD/ppQ3AbqtwA2ot3v55a+IgqY7VcAbLx9ibvsU4bPi7Xte2qyDt/QQBkywGiqUc/JpTteZXtAJAtC4gZ4XG4EdqqNjxysR0AsvGea1LpP1Y3BZ+6HNQFBA2QzXr22OtDSDOAlwty8mEAyMZ7sM3K/UNIs1j+2aAnHhaAFhQ3EC3Yi2GYdJgAulmWC4C3EJYJhw2gU2CwAs5cmCYbRoD5UhNTKc+2AWhPjrOGk26j9leAAQDu6F3rDzHr6wAAAABJRU5ErkJggg==);
+    background-size: 100% 100%;
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    right: 12px;
+    top: calc( 50% - 6px );
+    transition: transform 0.25s;
+}
+.mainmenu .minor_menu_items {
+    border-bottom: none;
+}
+.mainmenu .minor_menu_items .menuitem {
+    color: #8a8a8a;
+    border: none;
+    font-size: 0.75em;
+}
+.mainmenu_contents .menuitem{
+    border-top: 1px solid #2f3138;
+    border-bottom: 1px solid #000000;
+}
+.mainmenu_footer_spacer {
+    height: 160px;
+}
+.mainmenu_footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    white-space: normal;
+    color: #8a8a8a;
+    padding: 0 12px 24px 12px;
+}
+.mainmenu_footer .mainmenu_valve_links > a {
+    color: #8a8a8a;
+}
+.side-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #BFE2FF;
+}
+.side-button-1-wr {
+    left: 8px;
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    width: 36px;
+    height: 31px;
+}
+.side-button-1 {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    width: 36px;
+    height: 31px;
+}
+
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+    color: #FFF;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 280px;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+#side-checkbox:checked + .side-panel {
+    left: 0;
+}
+.side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #BFE2FF;    
+    transition: all 280ms ease-in-out;    
+}
+.side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);    
+    color: #FFF;
+}
+.responsive_page_content {
+    padding-top: 62px;
+    position: relative;
+    z-index: 10;
+    visibility: hidden;
+}
+
+@media (max-width: 940px) {
+    .nav_container{
+        display: none;
+    }
+    #global_actions{
+        display: none;
+    }
+    #header {
+        display: none;
+    }
+    #footer_spacer {
+        display: none;
+    }
+    .responsive_header{
+        display: block;
+    }
+    .responsive_page_content {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 700px) {
+    .login_container {
+        padding-top: 12px;
+        padding-bottom: 0px;
+        margin-top: 62px;
+    }
+    .primary_header {
+        text-align: center;
+    }
+    .new_login_dialog_container {
+        min-width: 0px;
+    background-color: transparent;
+    }
+    .new_login_dialog {
+        flex-direction: column;
+    }
+    .QR_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 48px;
+    }
+    .Beta_container {
+        align-items: center;
+    }
+    .PhoneIcon {
+        display: none;
+    }
+    .Beta_subtitle {
+        text-align: center;
+    }
+    .page_content {
+        background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(https://store.akamai.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask_mobile.jpg) center top no-repeat, #181A21;
+    }
+    .bottom_row {
+        flex-direction: column-reverse;
+    }
+}
